@@ -5,8 +5,9 @@ legend_types <- c() #creates empty vector
 for (i in pokemon$pokedex){ #iterates through all pokemon
   if (pokemon$is_legend[i] == 1){ #checks if legendary 
     legend_types <- c(legend_types, types[pokemon$type1[i]])
-  } #uses type1 as index to return character vector with 70 elements 
-} #there are no poison and fighting legendaries
+  } #type1 returns integer
+} #uses type1 as index for types in order to return character vector
+rm(i)
 counts <- as.data.frame(legend_types) #makes vector into dataframe
 
 #plots tyoes that are legends against count

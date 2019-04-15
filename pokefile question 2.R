@@ -3,12 +3,7 @@
 
 
 #appends 18 unique types in a vector
-all_types <- c()
-for (type in pokemon$type1){
-  all_types <- c(all_types, type)
-}
-all_types <- unique(all_types)
-rm(type)
+all_types <- levels(pokemon$type1)
 
 #appends all base total averages in a vector (in order of all_types)
 avgs <- c()
