@@ -16,3 +16,5 @@ avg_weight <- data.frame(
   stringsAsFactors = FALSE
 )
 
+
+#weight does not seem to
