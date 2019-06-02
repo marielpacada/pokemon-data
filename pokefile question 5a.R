@@ -5,7 +5,7 @@
 #iterates through generation number, appends average speeds to vector 
 all_speeds <- c()
 for (i in 1:7){
-  gen_speed <- mean(subset(pokemon, gen == i, select = speed)$speed)
+  gen_speed <- mean(subset(pokemon, gen == i)$speed)
   all_speeds <- c(all_speeds, gen_speed)
 }
 rm(i)

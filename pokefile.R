@@ -2,8 +2,7 @@ pokemon <- read.csv(file.choose())
 
 
 #plots base_total against type
-ggplot(pokemon, aes(x = type1, y = base_total)) + 
-  geom_point()
+ggplot(pokemon, aes(x = type1, y = base_total)) + geom_point()
 
 #plots speed against weight
 ggplot(pokemon, aes(x = weight_kg, y = speed)) + geom_point()
