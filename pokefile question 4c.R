@@ -1,4 +1,6 @@
+pokemon <- read.csv(file.choose())
 #are pokemon getting more resistant (higher defense + special defense)?
+
 
 
 #iterates through generation number, creates subsets for each generation

@@ -1,3 +1,4 @@
+pokemon <- read.csv(file.choose())
 #are pokemon getting faster?
 
 
@@ -26,6 +27,7 @@ ggplot(avg_speed_data, aes(x = generation, y = avg_speed), color = fill) +
 cor(avg_speed_data$generation, avg_speed_data$avg_speed)
 lm(avg_speed ~ generation, data = avg_speed_data)
 #very weak negative correlation
+
 
 
 #not really 

@@ -1,3 +1,4 @@
+pokemon <- read.csv(file.choose())
 #which pokemon type is the most abundant?
 
 

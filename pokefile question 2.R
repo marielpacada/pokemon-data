@@ -1,3 +1,4 @@
+pokemon <- read.csv(file.choose())
 #which type is the strongest overall? which is the weakest?
 
 
