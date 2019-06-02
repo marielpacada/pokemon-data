@@ -15,6 +15,7 @@ avg_weight <- data.frame(
   weight = type_weight,
   stringsAsFactors = FALSE
 )
+ggplot(avg_weight, aes(x = type, y = weight)) + geom_point()
 
 
 #weight does not seem to
