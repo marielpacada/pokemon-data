@@ -4,9 +4,7 @@
 #iterates through generation number, creates subsets for each generation
 gen_attack <- c()
 for (i in 1:7){
-  assign(toString(i), subset(pokemon, gen == i,
-                             select = c(attack, sp_attack)))
-  m <- mean(get(toString(i))$attack + get(toString(i))$sp_attack)
+  m <- mean(subset(pokemon, gen == i)$attack + subset(pokemon, gen == i)$sp_attack)
   gen_attack <- c(gen_attack, m)
 }
 rm(i)
