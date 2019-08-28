@@ -8,3 +8,4 @@ we explore the questions:
   4. Are Pokemon getting faster/stronger/more resistant?
   5. Is one type more likely to be a legendary than another?
 
+our goal is ultimately to publish these results through visualizations onto a web page using d3 and heroku
